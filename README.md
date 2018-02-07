@@ -500,3 +500,4 @@ void Model::buildTree(const std::vector<int64_t>& counts) {
 算法首先对输入的叶子节点进行一次排序（O(nlogn)O(nlogn) ），然后确定两个下标 leaf 和 node，leaf 总是指向当前最小的叶子节点，node 总是指向当前最小的非叶子节点，所以，最小的两个节点可以从 leaf, leaf - 1, node, node + 1 四个位置中取得，时间复杂度 O(1)O(1)，每个非叶子节点都进行一次，所以总复杂度为 O(n)O(n)，算法整体复杂度为 O(nlogn)O(nlogn)。
 
 
+
